@@ -21,7 +21,7 @@ module.exports = async (deployer) => {
     // await deployer.deploy(ERC20Token, 'DummyToken', 'DUM', 0);
     // await deployer.deploy(SmartToken, 'Token1', 'TKN1', 18);
     // await deployer.deploy(SmartTokenController, SmartToken.address);
-    await deployer.deploy(CrowdsaleController, 1589537600, '0x52f96788017f9185a67a86c3a270d28e0fccd751');
+    await deployer.deploy(CrowdsaleController, 1539537600, '0x125');
 };
 
 
