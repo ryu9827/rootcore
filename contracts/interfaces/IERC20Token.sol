@@ -8,7 +8,7 @@ contract IERC20Token {
     function name() public constant returns (string name) { name; }
     function symbol() public constant returns (string symbol) { symbol; }
     function decimals() public constant returns (uint8 decimals) { decimals; }
-    function totalSupply() public constant returns (uint256 totalSupply) { totalSupply; }
+    function decimals() public constant returns (uint256 totalSupply) { totalSupply; }
     function balanceOf(address _owner) public constant returns (uint256 balance) { _owner; balance; }
     function allowance(address _owner, address _spender) public constant returns (uint256 remaining) { _owner; _spender; remaining; }
 
