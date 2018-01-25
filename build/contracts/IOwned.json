@@ -1,5 +1,5 @@
 {
-  "contract_name": "IOwned",
+  "contractName": "IOwned",
   "abi": [
     {
       "constant": false,
@@ -36,8 +36,261 @@
       "type": "function"
     }
   ],
-  "unlinked_binary": "0x",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.15;\n\n/*\n    Owned contract interface\n*/\ncontract IOwned {\n    // this function isn't abstract since the compiler emits automatically generated getter functions as external\n    function owner() public constant returns (address owner) { owner; }\n\n    function transferOwnership(address _newOwner) public;\n    function acceptOwnership() public;\n}\n",
+  "sourcePath": "/Users/tikonoff/projects/rootcore/contracts/interfaces/IOwned.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/tikonoff/projects/rootcore/contracts/interfaces/IOwned.sol",
+      "exportedSymbols": {
+        "IOwned": [
+          1738
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".15"
+          ]
+        },
+        "id": 1721,
+        "name": "PragmaDirective",
+        "src": "0:24:14"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1738
+          ],
+          "name": "IOwned",
+          "scope": 1739
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "owner",
+              "payable": false,
+              "scope": 1738,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1722,
+                "name": "ParameterList",
+                "src": "211:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "owner",
+                      "scope": 1729,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 1723,
+                        "name": "ElementaryTypeName",
+                        "src": "239:7:14"
+                      }
+                    ],
+                    "id": 1724,
+                    "name": "VariableDeclaration",
+                    "src": "239:13:14"
+                  }
+                ],
+                "id": 1725,
+                "name": "ParameterList",
+                "src": "238:15:14"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 1724,
+                          "type": "address",
+                          "value": "owner"
+                        },
+                        "id": 1726,
+                        "name": "Identifier",
+                        "src": "256:5:14"
+                      }
+                    ],
+                    "id": 1727,
+                    "name": "ExpressionStatement",
+                    "src": "256:5:14"
+                  }
+                ],
+                "id": 1728,
+                "name": "Block",
+                "src": "254:10:14"
+              }
+            ],
+            "id": 1729,
+            "name": "FunctionDefinition",
+            "src": "197:67:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "transferOwnership",
+              "payable": false,
+              "scope": 1738,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_newOwner",
+                      "scope": 1734,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 1730,
+                        "name": "ElementaryTypeName",
+                        "src": "297:7:14"
+                      }
+                    ],
+                    "id": 1731,
+                    "name": "VariableDeclaration",
+                    "src": "297:17:14"
+                  }
+                ],
+                "id": 1732,
+                "name": "ParameterList",
+                "src": "296:19:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1733,
+                "name": "ParameterList",
+                "src": "322:0:14"
+              }
+            ],
+            "id": 1734,
+            "name": "FunctionDefinition",
+            "src": "270:53:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "acceptOwnership",
+              "payable": false,
+              "scope": 1738,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1735,
+                "name": "ParameterList",
+                "src": "352:2:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1736,
+                "name": "ParameterList",
+                "src": "361:0:14"
+              }
+            ],
+            "id": 1737,
+            "name": "FunctionDefinition",
+            "src": "328:34:14"
+          }
+        ],
+        "id": 1738,
+        "name": "ContractDefinition",
+        "src": "61:303:14"
+      }
+    ],
+    "id": 1739,
+    "name": "SourceUnit",
+    "src": "0:365:14"
+  },
   "networks": {},
-  "schema_version": "0.0.5",
-  "updated_at": 1506859348156
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2018-01-25T06:38:00.187Z"
 }

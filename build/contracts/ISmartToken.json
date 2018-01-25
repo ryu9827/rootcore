@@ -1,5 +1,5 @@
 {
-  "contract_name": "ISmartToken",
+  "contractName": "ISmartToken",
   "abi": [
     {
       "constant": true,
@@ -266,8 +266,386 @@
       "type": "function"
     }
   ],
-  "unlinked_binary": "0x",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.15;\nimport './ITokenHolder.sol';\nimport './IERC20Token.sol';\n\n/*\n    Smart Token interface\n*/\ncontract ISmartToken is ITokenHolder, IERC20Token {\n    function disableTransfers(bool _disable) public;\n    function issue(address _to, uint256 _amount) public;\n    function destroy(address _from, uint256 _amount) public;\n}\n",
+  "sourcePath": "/Users/tikonoff/projects/rootcore/contracts/interfaces/ISmartToken.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/tikonoff/projects/rootcore/contracts/interfaces/ISmartToken.sol",
+      "exportedSymbols": {
+        "ISmartToken": [
+          1766
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".15"
+          ]
+        },
+        "id": 1740,
+        "name": "PragmaDirective",
+        "src": "0:24:15"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1783,
+          "absolutePath": "/Users/tikonoff/projects/rootcore/contracts/interfaces/ITokenHolder.sol",
+          "file": "./ITokenHolder.sol",
+          "scope": 1767,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1741,
+        "name": "ImportDirective",
+        "src": "25:28:15"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1720,
+          "absolutePath": "/Users/tikonoff/projects/rootcore/contracts/interfaces/IERC20Token.sol",
+          "file": "./IERC20Token.sol",
+          "scope": 1767,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1742,
+        "name": "ImportDirective",
+        "src": "54:27:15"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            1719,
+            1738,
+            1782
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1766,
+            1719,
+            1782,
+            1738
+          ],
+          "name": "ISmartToken",
+          "scope": 1767
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "ITokenHolder",
+                  "referencedDeclaration": 1782,
+                  "type": "contract ITokenHolder"
+                },
+                "id": 1743,
+                "name": "UserDefinedTypeName",
+                "src": "139:12:15"
+              }
+            ],
+            "id": 1744,
+            "name": "InheritanceSpecifier",
+            "src": "139:12:15"
+          },
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IERC20Token",
+                  "referencedDeclaration": 1719,
+                  "type": "contract IERC20Token"
+                },
+                "id": 1745,
+                "name": "UserDefinedTypeName",
+                "src": "153:11:15"
+              }
+            ],
+            "id": 1746,
+            "name": "InheritanceSpecifier",
+            "src": "153:11:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "disableTransfers",
+              "payable": false,
+              "scope": 1766,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_disable",
+                      "scope": 1751,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 1747,
+                        "name": "ElementaryTypeName",
+                        "src": "197:4:15"
+                      }
+                    ],
+                    "id": 1748,
+                    "name": "VariableDeclaration",
+                    "src": "197:13:15"
+                  }
+                ],
+                "id": 1749,
+                "name": "ParameterList",
+                "src": "196:15:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1750,
+                "name": "ParameterList",
+                "src": "218:0:15"
+              }
+            ],
+            "id": 1751,
+            "name": "FunctionDefinition",
+            "src": "171:48:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "issue",
+              "payable": false,
+              "scope": 1766,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_to",
+                      "scope": 1758,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 1752,
+                        "name": "ElementaryTypeName",
+                        "src": "239:7:15"
+                      }
+                    ],
+                    "id": 1753,
+                    "name": "VariableDeclaration",
+                    "src": "239:11:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_amount",
+                      "scope": 1758,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1754,
+                        "name": "ElementaryTypeName",
+                        "src": "252:7:15"
+                      }
+                    ],
+                    "id": 1755,
+                    "name": "VariableDeclaration",
+                    "src": "252:15:15"
+                  }
+                ],
+                "id": 1756,
+                "name": "ParameterList",
+                "src": "238:30:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1757,
+                "name": "ParameterList",
+                "src": "275:0:15"
+              }
+            ],
+            "id": 1758,
+            "name": "FunctionDefinition",
+            "src": "224:52:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "destroy",
+              "payable": false,
+              "scope": 1766,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_from",
+                      "scope": 1765,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 1759,
+                        "name": "ElementaryTypeName",
+                        "src": "298:7:15"
+                      }
+                    ],
+                    "id": 1760,
+                    "name": "VariableDeclaration",
+                    "src": "298:13:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_amount",
+                      "scope": 1765,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1761,
+                        "name": "ElementaryTypeName",
+                        "src": "313:7:15"
+                      }
+                    ],
+                    "id": 1762,
+                    "name": "VariableDeclaration",
+                    "src": "313:15:15"
+                  }
+                ],
+                "id": 1763,
+                "name": "ParameterList",
+                "src": "297:32:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1764,
+                "name": "ParameterList",
+                "src": "336:0:15"
+              }
+            ],
+            "id": 1765,
+            "name": "FunctionDefinition",
+            "src": "281:56:15"
+          }
+        ],
+        "id": 1766,
+        "name": "ContractDefinition",
+        "src": "115:224:15"
+      }
+    ],
+    "id": 1767,
+    "name": "SourceUnit",
+    "src": "0:340:15"
+  },
   "networks": {},
-  "schema_version": "0.0.5",
-  "updated_at": 1506859348156
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2018-01-25T06:38:00.187Z"
 }
