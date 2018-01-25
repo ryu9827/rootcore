@@ -7,7 +7,8 @@
       "name": "acceptOwnership",
       "outputs": [],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "nonpayable"
     },
     {
       "constant": true,
@@ -20,7 +21,8 @@
         }
       ],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "view"
     },
     {
       "constant": false,
@@ -33,18 +35,19 @@
       "name": "transferOwnership",
       "outputs": [],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "nonpayable"
     }
   ],
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.4.15;\n\n/*\n    Owned contract interface\n*/\ncontract IOwned {\n    // this function isn't abstract since the compiler emits automatically generated getter functions as external\n    function owner() public constant returns (address owner) { owner; }\n\n    function transferOwnership(address _newOwner) public;\n    function acceptOwnership() public;\n}\n",
-  "sourcePath": "/Users/tikonoff/projects/rootcore/contracts/interfaces/IOwned.sol",
+  "source": "pragma solidity ^0.4.15;\r\n\r\n/*\r\n    Owned contract interface\r\n*/\r\ncontract IOwned {\r\n    // this function isn't abstract since the compiler emits automatically generated getter functions as external\r\n    function owner() public constant returns (address owner) { owner; }\r\n\r\n    function transferOwnership(address _newOwner) public;\r\n    function acceptOwnership() public;\r\n}\r\n",
+  "sourcePath": "D:\\Blockchain-Solidity\\rootcore\\contracts\\interfaces\\IOwned.sol",
   "ast": {
     "attributes": {
-      "absolutePath": "/Users/tikonoff/projects/rootcore/contracts/interfaces/IOwned.sol",
+      "absolutePath": "/D/Blockchain-Solidity/rootcore/contracts/interfaces/IOwned.sol",
       "exportedSymbols": {
         "IOwned": [
           1738
@@ -94,7 +97,9 @@
               "name": "owner",
               "payable": false,
               "scope": 1738,
-              "visibility": "public"
+              "visibility": "public",
+              "stateMutability": "view",
+              "superFunction": null
             },
             "children": [
               {
@@ -106,7 +111,7 @@
                 "children": [],
                 "id": 1722,
                 "name": "ParameterList",
-                "src": "211:2:14"
+                "src": "218:2:14"
               },
               {
                 "children": [
@@ -129,17 +134,17 @@
                         },
                         "id": 1723,
                         "name": "ElementaryTypeName",
-                        "src": "239:7:14"
+                        "src": "246:7:14"
                       }
                     ],
                     "id": 1724,
                     "name": "VariableDeclaration",
-                    "src": "239:13:14"
+                    "src": "246:13:14"
                   }
                 ],
                 "id": 1725,
                 "name": "ParameterList",
-                "src": "238:15:14"
+                "src": "245:15:14"
               },
               {
                 "children": [
@@ -157,22 +162,22 @@
                         },
                         "id": 1726,
                         "name": "Identifier",
-                        "src": "256:5:14"
+                        "src": "263:5:14"
                       }
                     ],
                     "id": 1727,
                     "name": "ExpressionStatement",
-                    "src": "256:5:14"
+                    "src": "263:5:14"
                   }
                 ],
                 "id": 1728,
                 "name": "Block",
-                "src": "254:10:14"
+                "src": "261:10:14"
               }
             ],
             "id": 1729,
             "name": "FunctionDefinition",
-            "src": "197:67:14"
+            "src": "204:67:14"
           },
           {
             "attributes": {
@@ -186,7 +191,9 @@
               "name": "transferOwnership",
               "payable": false,
               "scope": 1738,
-              "visibility": "public"
+              "visibility": "public",
+              "stateMutability": "nonpayable",
+              "superFunction": null
             },
             "children": [
               {
@@ -210,17 +217,17 @@
                         },
                         "id": 1730,
                         "name": "ElementaryTypeName",
-                        "src": "297:7:14"
+                        "src": "306:7:14"
                       }
                     ],
                     "id": 1731,
                     "name": "VariableDeclaration",
-                    "src": "297:17:14"
+                    "src": "306:17:14"
                   }
                 ],
                 "id": 1732,
                 "name": "ParameterList",
-                "src": "296:19:14"
+                "src": "305:19:14"
               },
               {
                 "attributes": {
@@ -231,12 +238,12 @@
                 "children": [],
                 "id": 1733,
                 "name": "ParameterList",
-                "src": "322:0:14"
+                "src": "331:0:14"
               }
             ],
             "id": 1734,
             "name": "FunctionDefinition",
-            "src": "270:53:14"
+            "src": "279:53:14"
           },
           {
             "attributes": {
@@ -250,7 +257,9 @@
               "name": "acceptOwnership",
               "payable": false,
               "scope": 1738,
-              "visibility": "public"
+              "visibility": "public",
+              "stateMutability": "nonpayable",
+              "superFunction": null
             },
             "children": [
               {
@@ -262,7 +271,7 @@
                 "children": [],
                 "id": 1735,
                 "name": "ParameterList",
-                "src": "352:2:14"
+                "src": "362:2:14"
               },
               {
                 "attributes": {
@@ -273,24 +282,24 @@
                 "children": [],
                 "id": 1736,
                 "name": "ParameterList",
-                "src": "361:0:14"
+                "src": "371:0:14"
               }
             ],
             "id": 1737,
             "name": "FunctionDefinition",
-            "src": "328:34:14"
+            "src": "338:34:14"
           }
         ],
         "id": 1738,
         "name": "ContractDefinition",
-        "src": "61:303:14"
+        "src": "66:309:14"
       }
     ],
     "id": 1739,
     "name": "SourceUnit",
-    "src": "0:365:14"
+    "src": "0:377:14"
   },
   "networks": {},
   "schemaVersion": "1.0.0",
-  "updatedAt": "2018-01-25T20:36:10.146Z"
+  "updatedAt": "2018-01-25T22:03:26.702Z"
 }
