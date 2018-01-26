@@ -19,7 +19,8 @@
     "reset": "truffle migrate --reset",
     "truffle-version": "truffle version",
     "solc-compile": "solc --version",
-    "coverage": "cat ./coverage/lcov.info | coveralls"
+    "coverage": "cat ./coverage/lcov.info | coveralls",
+    "cover": "istanbul cover --report lcov node_modules/mocha/bin/_mocha -- -R spec test/*.js"
   },
   "dependencies": {
     "bignumber.js": "^4.1.0",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "eth-gas-reporter": "^0.1.1"
+    "eth-gas-reporter": "^0.1.1",
+    "istanbul": "^0.4.5"
   }
 }

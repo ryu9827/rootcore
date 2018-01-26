@@ -1,4 +1,5 @@
-﻿# Rootcore Crowdsale Token Sale
+﻿[![Build Status](https://travis-ci.org/ryu9827/rootcore.svg?branch=master)](https://travis-ci.org/ryu9827/rootcore)
+# Rootcore Crowdsale Token Sale
 In this document, we describe the token sale specification and implementation,
 and give an overview over the smart contracts structure.
 
