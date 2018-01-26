@@ -1,5 +1,5 @@
 {
-  "contract_name": "ITokenHolder",
+  "contractName": "ITokenHolder",
   "abi": [
     {
       "constant": false,
@@ -20,7 +20,8 @@
       "name": "withdrawTokens",
       "outputs": [],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "nonpayable"
     },
     {
       "constant": false,
@@ -28,7 +29,8 @@
       "name": "acceptOwnership",
       "outputs": [],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "nonpayable"
     },
     {
       "constant": true,
@@ -41,7 +43,8 @@
         }
       ],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "view"
     },
     {
       "constant": false,
@@ -54,11 +57,239 @@
       "name": "transferOwnership",
       "outputs": [],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "nonpayable"
     }
   ],
-  "unlinked_binary": "0x",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.15;\r\nimport './IOwned.sol';\r\nimport './IERC20Token.sol';\r\n\r\n/*\r\n    Token Holder interface\r\n*/\r\ncontract ITokenHolder is IOwned {\r\n    function withdrawTokens(IERC20Token _token, address _to, uint256 _amount) public;\r\n}\r\n",
+  "sourcePath": "D:\\Blockchain-Solidity\\rootcore-fork\\contracts\\interfaces\\ITokenHolder.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain-Solidity/rootcore-fork/contracts/interfaces/ITokenHolder.sol",
+      "exportedSymbols": {
+        "ITokenHolder": [
+          1782
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".15"
+          ]
+        },
+        "id": 1768,
+        "name": "PragmaDirective",
+        "src": "0:24:16"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1739,
+          "absolutePath": "/D/Blockchain-Solidity/rootcore-fork/contracts/interfaces/IOwned.sol",
+          "file": "./IOwned.sol",
+          "scope": 1783,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1769,
+        "name": "ImportDirective",
+        "src": "26:22:16"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1720,
+          "absolutePath": "/D/Blockchain-Solidity/rootcore-fork/contracts/interfaces/IERC20Token.sol",
+          "file": "./IERC20Token.sol",
+          "scope": 1783,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1770,
+        "name": "ImportDirective",
+        "src": "50:27:16"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            1738
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1782,
+            1738
+          ],
+          "name": "ITokenHolder",
+          "scope": 1783
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IOwned",
+                  "referencedDeclaration": 1738,
+                  "type": "contract IOwned"
+                },
+                "id": 1771,
+                "name": "UserDefinedTypeName",
+                "src": "142:6:16"
+              }
+            ],
+            "id": 1772,
+            "name": "InheritanceSpecifier",
+            "src": "142:6:16"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawTokens",
+              "payable": false,
+              "scope": 1782,
+              "visibility": "public",
+              "stateMutability": "nonpayable",
+              "superFunction": null
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_token",
+                      "scope": 1781,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IERC20Token",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IERC20Token",
+                          "referencedDeclaration": 1719,
+                          "type": "contract IERC20Token"
+                        },
+                        "id": 1773,
+                        "name": "UserDefinedTypeName",
+                        "src": "180:11:16"
+                      }
+                    ],
+                    "id": 1774,
+                    "name": "VariableDeclaration",
+                    "src": "180:18:16"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_to",
+                      "scope": 1781,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 1775,
+                        "name": "ElementaryTypeName",
+                        "src": "200:7:16"
+                      }
+                    ],
+                    "id": 1776,
+                    "name": "VariableDeclaration",
+                    "src": "200:11:16"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_amount",
+                      "scope": 1781,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1777,
+                        "name": "ElementaryTypeName",
+                        "src": "213:7:16"
+                      }
+                    ],
+                    "id": 1778,
+                    "name": "VariableDeclaration",
+                    "src": "213:15:16"
+                  }
+                ],
+                "id": 1779,
+                "name": "ParameterList",
+                "src": "179:50:16"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1780,
+                "name": "ParameterList",
+                "src": "236:0:16"
+              }
+            ],
+            "id": 1781,
+            "name": "FunctionDefinition",
+            "src": "156:81:16"
+          }
+        ],
+        "id": 1782,
+        "name": "ContractDefinition",
+        "src": "117:123:16"
+      }
+    ],
+    "id": 1783,
+    "name": "SourceUnit",
+    "src": "0:242:16"
+  },
   "networks": {},
-  "schema_version": "0.0.5",
-  "updated_at": 1506859348156
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2018-01-26T01:41:48.110Z"
 }

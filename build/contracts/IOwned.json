@@ -1,5 +1,5 @@
 {
-  "contract_name": "IOwned",
+  "contractName": "IOwned",
   "abi": [
     {
       "constant": false,
@@ -7,7 +7,8 @@
       "name": "acceptOwnership",
       "outputs": [],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "nonpayable"
     },
     {
       "constant": true,
@@ -20,7 +21,8 @@
         }
       ],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "view"
     },
     {
       "constant": false,
@@ -33,11 +35,271 @@
       "name": "transferOwnership",
       "outputs": [],
       "payable": false,
-      "type": "function"
+      "type": "function",
+      "stateMutability": "nonpayable"
     }
   ],
-  "unlinked_binary": "0x",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.15;\r\n\r\n/*\r\n    Owned contract interface\r\n*/\r\ncontract IOwned {\r\n    // this function isn't abstract since the compiler emits automatically generated getter functions as external\r\n    function owner() public constant returns (address owner) { owner; }\r\n\r\n    function transferOwnership(address _newOwner) public;\r\n    function acceptOwnership() public;\r\n}\r\n",
+  "sourcePath": "D:\\Blockchain-Solidity\\rootcore-fork\\contracts\\interfaces\\IOwned.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain-Solidity/rootcore-fork/contracts/interfaces/IOwned.sol",
+      "exportedSymbols": {
+        "IOwned": [
+          1738
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".15"
+          ]
+        },
+        "id": 1721,
+        "name": "PragmaDirective",
+        "src": "0:24:14"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1738
+          ],
+          "name": "IOwned",
+          "scope": 1739
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "owner",
+              "payable": false,
+              "scope": 1738,
+              "visibility": "public",
+              "stateMutability": "view",
+              "superFunction": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1722,
+                "name": "ParameterList",
+                "src": "218:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "owner",
+                      "scope": 1729,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 1723,
+                        "name": "ElementaryTypeName",
+                        "src": "246:7:14"
+                      }
+                    ],
+                    "id": 1724,
+                    "name": "VariableDeclaration",
+                    "src": "246:13:14"
+                  }
+                ],
+                "id": 1725,
+                "name": "ParameterList",
+                "src": "245:15:14"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 1724,
+                          "type": "address",
+                          "value": "owner"
+                        },
+                        "id": 1726,
+                        "name": "Identifier",
+                        "src": "263:5:14"
+                      }
+                    ],
+                    "id": 1727,
+                    "name": "ExpressionStatement",
+                    "src": "263:5:14"
+                  }
+                ],
+                "id": 1728,
+                "name": "Block",
+                "src": "261:10:14"
+              }
+            ],
+            "id": 1729,
+            "name": "FunctionDefinition",
+            "src": "204:67:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "transferOwnership",
+              "payable": false,
+              "scope": 1738,
+              "visibility": "public",
+              "stateMutability": "nonpayable",
+              "superFunction": null
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_newOwner",
+                      "scope": 1734,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 1730,
+                        "name": "ElementaryTypeName",
+                        "src": "306:7:14"
+                      }
+                    ],
+                    "id": 1731,
+                    "name": "VariableDeclaration",
+                    "src": "306:17:14"
+                  }
+                ],
+                "id": 1732,
+                "name": "ParameterList",
+                "src": "305:19:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1733,
+                "name": "ParameterList",
+                "src": "331:0:14"
+              }
+            ],
+            "id": 1734,
+            "name": "FunctionDefinition",
+            "src": "279:53:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "acceptOwnership",
+              "payable": false,
+              "scope": 1738,
+              "visibility": "public",
+              "stateMutability": "nonpayable",
+              "superFunction": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1735,
+                "name": "ParameterList",
+                "src": "362:2:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1736,
+                "name": "ParameterList",
+                "src": "371:0:14"
+              }
+            ],
+            "id": 1737,
+            "name": "FunctionDefinition",
+            "src": "338:34:14"
+          }
+        ],
+        "id": 1738,
+        "name": "ContractDefinition",
+        "src": "66:309:14"
+      }
+    ],
+    "id": 1739,
+    "name": "SourceUnit",
+    "src": "0:377:14"
+  },
   "networks": {},
-  "schema_version": "0.0.5",
-  "updated_at": 1506859348156
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2018-01-26T01:41:48.109Z"
 }

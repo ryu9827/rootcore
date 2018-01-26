@@ -1,10 +1,17 @@
 module.exports = {
     networks: {
         development: {
-        host: "localhost",
-        port: 8545,
-        network_id: "*", // Match any network id
-        gasPrice: 24000000000
-      }
+    	    host: "localhost",
+        	port: 8545,
+	        network_id: "*", // Match any network id
+        	gasPrice: 20e9
+      	}
+    },
+  mocha: {
+    reporter: 'eth-gas-reporter',
+    reporterOptions : {
+      currency: 'CHF',
+      gasPrice: 21
     }
+  }
 };
