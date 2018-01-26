@@ -18,7 +18,8 @@
     "deploy": "truffle deploy",
     "reset": "truffle migrate --reset",
     "truffle-version": "truffle version",
-    "solc-compile": "solc --version"
+    "solc-compile": "solc --version",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "bignumber.js": "^4.1.0",
