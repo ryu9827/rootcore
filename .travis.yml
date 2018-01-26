@@ -11,7 +11,7 @@ install:
   - npm install
 before_script:
   - npm run testrpc
-  - sleep 10
+  - sleep 5
 script:
   - npm test
 after_script:
