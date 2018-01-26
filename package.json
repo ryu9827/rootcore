@@ -26,5 +26,9 @@
     "sleep": "^5.1.1",
     "solc": "^0.4.16",
     "truffle": "^3.4.9"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5"
   }
 }

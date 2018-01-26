@@ -9,10 +9,10 @@ install:
   - npm install -g truffle
   - npm install -g ethereumjs-testrpc
   - npm install
+before_script:
+  - npm run testrpc
+  - sleep 10
 script:
   - npm test
-before_script:
-  - testrpc > /dev/null &
-  - sleep 5
 after_script:
   - npm run coverage && cat coverage/lcov.info | coveralls
