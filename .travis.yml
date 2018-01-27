@@ -14,8 +14,7 @@ before_script:
   - sleep 5
 script:
   - truffle test
-  # - npm run cover
 after_script:
-  # - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+  - npm run testrpc -i 666 --gasLimit 6721975 --gasPrice 100000000000 > /dev/null &
   - npm run coverage && cat coverage/lcov.info | coveralls
   
