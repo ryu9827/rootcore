@@ -1,5 +1,5 @@
-service_name: travis-pro
-repo_token: f5uUaWhxtRI0sFBbsLWAsIwizZYYiUPRu
+# service_name: travis-pro
+# repo_token: f5uUaWhxtRI0sFBbsLWAsIwizZYYiUPRu
 sudo: required
 dist: trusty
 language: node_js
@@ -14,6 +14,7 @@ before_script:
   - sleep 5
 script:
   - truffle test
+  - npm run cover
 after_script:
   - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
   # - npm run coverage && cat coverage/lcov.info | coveralls

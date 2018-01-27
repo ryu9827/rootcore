@@ -10,7 +10,7 @@ module.exports = {
   mocha: {
     reporter: 'eth-gas-reporter',
     reporterOptions : {
-      currency: 'CHF',
+      currency: 'NZD',
       gasPrice: 21
     }
   }
