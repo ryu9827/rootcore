@@ -14,7 +14,7 @@ before_script:
   - sleep 5
 script:
   - truffle test
-  - npm run cover
+  # - npm run cover
 after_script:
   # - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
   - npm run coverage && cat coverage/lcov.info | coveralls
