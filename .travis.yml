@@ -16,6 +16,6 @@ script:
   - truffle test
   - npm run cover
 after_script:
-  - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
-  # - npm run coverage && cat coverage/lcov.info | coveralls
+  # - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+  - npm run coverage && cat coverage/lcov.info | coveralls
   
