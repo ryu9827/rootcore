@@ -37,10 +37,10 @@ contract SmartTokenController is TokenHolder {
     }
 
     // ensures that the controller is not the token's owner
-    modifier inactive() {
-        assert(token.owner() != address(this));
-        _;
-    }
+    // modifier inactive() {
+    //     assert(token.owner() != address(this));
+    //     _;
+    // }
 
     /**
         @dev allows transferring the token ownership
