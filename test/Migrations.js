@@ -15,7 +15,7 @@ contract('Migrations', function(accounts) {
         let contract = await Migrations.new();
         await contract.setCompleted(5);
         let last_completed_migration = await contract.last_completed_migration.call();
-        // await contract.upgrade(utils.contractAdr);
+        await contract.upgrade(utils.contractAdr);
         assert.equal(last_completed_migration, 5);
     })
 

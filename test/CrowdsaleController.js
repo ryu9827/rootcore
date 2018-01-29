@@ -70,9 +70,10 @@ contract('CrowdsaleController', (accounts) => {
         presaleContributorAddress = accounts[4];
     });
 
-    it('', async () => {
-        
-    })
+    // it('verify the contributePreSale', async () => {
+    //     let controller = await initController(accounts, true, startTime);
+
+    // })
 
     it('verifies the base storage values after construction', async () => {
         let controller = await generateDefaultController();
