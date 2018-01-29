@@ -70,6 +70,10 @@ contract('CrowdsaleController', (accounts) => {
         presaleContributorAddress = accounts[4];
     });
 
+    it('', async () => {
+        
+    })
+
     it('verifies the base storage values after construction', async () => {
         let controller = await generateDefaultController();
         let token = SmartToken.at(await controller.token.call());
