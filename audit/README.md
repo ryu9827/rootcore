@@ -84,4 +84,4 @@ We are pleased to report that no potential vulnerabilities were uncovered during
 Of the issues we have raised all of them are minor. This crowdsale has a low risk of ethereum being hacked or stolen. 
 
 Coverage screenshot
-<img alt="coverage screenshot" src="http://github.com/ryu9827/rootcore/blob/master/audit/Coverage_screenshot.png">
+<img alt="coverage screenshot" src="http://www.brucelihunting4ajob.info/img/tmp/Coverage_screenshot.png">
