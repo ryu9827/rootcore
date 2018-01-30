@@ -72,8 +72,8 @@ contract('CrowdsaleController', (accounts) => {
 
     it('verify the contributePreSale', async () => {
         let controller = await initController(accounts, true, startTime);
-        let tokenAmount = await controller.contributePreSale();
-        assert(tokenAmount, tokenAmount);
+        let tokenAmount = await controller.contributePreSale({value:10});
+        assert(tokenAmount, 10);
     })
 
     it('verifies the base storage values after construction', async () => {
