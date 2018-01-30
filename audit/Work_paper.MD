@@ -3,33 +3,23 @@
 
 [CrowdsaleController.sol](/contracts/CrowdsaleController.sol)
 ```
-.-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
-|                                                                               contracts/CrowdsaleController.sol                                      
-                             |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      Contract       |               Function               | Visibility | Constant | Returns |                                  Modifiers                                   | Static Analysis | Test Coverage | Functional Analysis |
-|---------------------|--------------------------------------|------------|----------|---------|------------------------------------------------------------------------------|-----------------|---------------|---------------------|
-| CrowdsaleController | CrowdsaleController(uint256,address) | public     | false    |         | SmartTokenController,validAddress,earlierThan                                | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | computeReturn(uint256)               | public     | true     | uint256 |                                                                              | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | upadateContributorsCount(uint256)    | private    | false    |         |                                                                              | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | addToWhitelist(address)              | public     | false    | added   | managerOnly                                                                  | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | removeFromWhitelist(address)         | public     | false    | added   | managerOnly                                                                  | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | contributeETH()                      | public     | false    | amount  | payable,between,whenNotPaused,maxAccountContributionNotReached               | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | contributePreSale()                  | public     | false    | amount  | payable,between,whenNotPaused,validatePresaleMinPrice,validatePresaleAddress | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | contributeFiat(address,uint256)      | public     | false    | amount  | payable,managerOnly,between,whenNotPaused                                    | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | processContribution()                | private    | false    | amount  | active,etherSoftCapNotReached,etherCapNotReached,validGasPrice               | [x]             | [x]
-       | [x]                 |
-| CrowdsaleController | ()                                   | public     | false    |         | payable                                                                      | [x]             | [x]
-       | [x]                 |
-'-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'
+.----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+|                                                                    D:\Blockchain-Solidity\rootcore-Audit\contracts\CrowdsaleController.sol
+        |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Contract       |               Function               | Visibility | Constant | Returns |                                  Modifiers                                   | Static Ana | Coverage | Func Ana |
+|---------------------|--------------------------------------|------------|----------|---------|------------------------------------------------------------------------------|------------|----------|----------|
+| CrowdsaleController | CrowdsaleController(uint256,address) | public     | false    |         | SmartTokenController,validAddress,earlierThan                                | [x]        | [x]      | [x]      |
+| CrowdsaleController | computeReturn(uint256)               | public     | true     | uint256 |                                                                              | [x]        | [x]      | [x]      |
+| CrowdsaleController | upadateContributorsCount(uint256)    | private    | false    |         |                                                                              | [x]        | [x]      | [x]      |
+| CrowdsaleController | addToWhitelist(address)              | public     | false    | added   | managerOnly                                                                  | [x]        | [x]      | [x]      |
+| CrowdsaleController | removeFromWhitelist(address)         | public     | false    | added   | managerOnly                                                                  | [x]        | [x]      | [x]      |
+| CrowdsaleController | contributeETH()                      | public     | false    | amount  | payable,between,whenNotPaused,maxAccountContributionNotReached               | [x]        | [x]      | [x]      |
+| CrowdsaleController | contributePreSale()                  | public     | false    | amount  | payable,between,whenNotPaused,validatePresaleMinPrice,validatePresaleAddress | [x]        | [x]      | [x]      |
+| CrowdsaleController | contributeFiat(address,uint256)      | public     | false    | amount  | payable,managerOnly,between,whenNotPaused                                    | [x]        | [x]      | [x]      |
+| CrowdsaleController | processContribution()                | private    | false    | amount  | active,etherSoftCapNotReached,etherCapNotReached,validGasPrice               | [x]        | [x]      | [x]      |
+| CrowdsaleController | ()                                   | public     | false    |         | payable                                                                      | [x]        | [x]      | [x]      |
+'----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'
 ```
 
 [ERC20Token.sol](/contracts/ERC20Token.sol)
