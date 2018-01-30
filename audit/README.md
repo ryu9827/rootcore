@@ -75,6 +75,12 @@ The audit report is focused on the following key areas - though this is not an e
 ### Critical
 - None found
 
+## Dynamic Analysis 
+Coverage: 94.69%
+Coverage screenshot
+
+<img alt="coverage screenshot" src="http://www.brucelihunting4ajob.info/img/tmp/Coverage_screenshot.png">
+
 ## Conclusion
 
 Overall we have been fully satisfied with the resulting contracts following the audit feedback period. We took part in carefully reviewing all source code provided, including deployment testing.
@@ -82,6 +88,3 @@ Overall we have been fully satisfied with the resulting contracts following the 
 We are pleased to report that no potential vulnerabilities were uncovered during the audit. That the token complies with the recently finalised ERC20 Token Standards. The code has excellent testability and the developers have followed common best practices.
 
 Of the issues we have raised all of them are minor. This crowdsale has a low risk of ethereum being hacked or stolen. 
-
-Coverage screenshot
-<img alt="coverage screenshot" src="http://www.brucelihunting4ajob.info/img/tmp/Coverage_screenshot.png">
