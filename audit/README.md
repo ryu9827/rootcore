@@ -64,7 +64,9 @@ The audit report is focused on the following key areas - though this is not an e
 ## Findings
 <!-- Here goes a list of issues -->
 ### Minor
-- None found
+- **modifier greaterThanZero never used** -  Utils.sol [L14](https://github.com/ryu9827/rootcore/blob/39097178467845370ac19a299473f9ff90a16e22/contracts/Utils.sol#L14)
+  - [ ] Not Fixed
+
 
 ### Moderate
 - None found
