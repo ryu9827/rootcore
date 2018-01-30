@@ -70,11 +70,13 @@ contract('CrowdsaleController', (accounts) => {
         presaleContributorAddress = accounts[4];
     });
 
-    it('verify the contributePreSale', async () => {
-        let controller = await initController(accounts, true, startTime);
-        let tokenAmount = await controller.contributePreSale({value:10});
-        assert(tokenAmount, 10);
-    })
+    // it.only('verify the contributePreSale', async () => {
+    //     let controller = await initController(accounts, true, startTime);
+    //     let tokenAmount = await controller.contributePreSale({value:10, from:accounts[4]});
+    //     let aa = getContributionAmount(tokenAmount);
+    //     // let tokenAmount = 10;
+    //     assert(aa, 10);
+    // })
 
     it('verifies the base storage values after construction', async () => {
         let controller = await generateDefaultController();
